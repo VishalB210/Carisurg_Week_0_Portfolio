@@ -1,10 +1,10 @@
 # Carisurg_Week_0_Portfolio
 
-## CariSurg Week 0 Portfolio – Data Cleaning Assignments
+## CariSurg Week 0 Portfolio – Data Cleaning and Data Visualization Assignments
 
 This repository contains my Week 0 submissions for the CariSurg MedTech Pathways Program.
 
-The assignments focused on developing fundamental data cleaning skills using Python and Pandas. The goal was to identify inconsistencies, handle missing values, validate data quality, and prepare datasets for future analysis and machine learning applications.
+The assignments focused on developing fundamental data cleaning and data visualization skills using Python, Pandas, NumPy, and Matplotlib. The goal was to identify inconsistencies, handle missing values, validate data quality, prepare datasets for analysis, and create meaningful visualizations that provide clinical insights from healthcare data.
 
 
 
@@ -24,8 +24,8 @@ The objective of this assignment was to clean and standardize the Gender column 
 
 ## Files
 
-- Carisurg_Task1_Week0.ipynb
-- EmergencyTriageDataset_Cleaned.csv
+- 01_Assignment1_GenderCleaning.ipynb
+- 02_Gender_Cleaned_Dataset.csv
 
 
 
@@ -49,7 +49,7 @@ The Pulse column was converted to numeric format using Pandas. Invalid or non-nu
 
 Missing values were identified using data validation checks.
 
-Result:
+**Result:**
 - Missing values after numeric conversion: 44
 
 ### 4. Out-of-Range Detection
@@ -58,7 +58,7 @@ A valid physiological pulse range of 40–170 beats per minute (bpm) was establi
 
 Values outside this range were considered unrealistic and replaced with NaN.
 
-Result:
+**Result:**
 - Out-of-range pulse values detected: 43
 
 ### 5. Median Imputation
@@ -67,57 +67,129 @@ Missing values were replaced using the median pulse value.
 
 The median was selected because it is less sensitive to extreme values and outliers than the mean.
 
-Result:
+**Result:**
 - Median pulse value used: 90 bpm
 
 ### 6. Validation
 
 After cleaning, the dataset was validated using descriptive statistics and visual inspection.
 
-Results:
+**Results:**
 - Missing values remaining: 0
 - Minimum pulse value: 40 bpm
 - Maximum pulse value: 170 bpm
 
+## Files
 
-## Files Included
-
-### Assignment 1
-
-- Carisurg_Task1_Week0.ipynb
-- EmergencyTriageDataset_Cleaned.csv
-
-### Assignment 2
-
-- Assignment2_PulseCleaning.ipynb
-- EmergencyTriageDataset_Cleaned_Pulse.csv
+- 03_Assignment2_PulseCleaning.ipynb
+- 04_Pulse_Cleaned_Dataset.csv
 
 
-## Tools Used
+
+# Assignment 3 – Data Visualization
+
+## Objective
+
+The objective of this assignment was to create meaningful clinical visualizations using the Emergency Triage Dataset.
+
+The Pulse column was selected because heart rate is an important vital sign used in emergency medicine to assess circulation, cardiovascular function, and overall patient stability.
+
+The Pulse column was previously cleaned and validated during Assignment 2 before being used for visualization and analysis.
+
+## Visualizations Created
+
+### 1. Pulse Distribution Histogram
+
+Clinical Question:
+
+> How are pulse rates distributed among Emergency Department patients?
+
+A histogram was used to visualize the distribution of pulse values throughout the dataset.
+
+A clinical reference line was added at:
+
+- 100 bpm (Tachycardia Threshold)
+
+This threshold helps identify patients whose pulse rates may indicate elevated cardiovascular stress or other clinical concerns.
+
+### 2. Age vs Pulse Scatter Plot
+
+Clinical Question:
+
+> Does age affect resting heart rate in Emergency Department patients?
+
+A scatter plot was used to explore the relationship between Age and Pulse.
+
+Clinical reference lines were added at:
+
+- 60 bpm (Lower Normal Pulse)
+- 100 bpm (Upper Normal Pulse)
+
+These lines provide clinical context when interpreting heart rate measurements.
+
+## Results
+
+- Most pulse values were concentrated between approximately 80 and 100 bpm.
+- Some patients exhibited pulse values above the tachycardia threshold.
+- No strong visible relationship between age and pulse was observed.
+- The visualizations demonstrated how cleaned healthcare data can be used to generate meaningful clinical insights.
+
+## Files
+
+- 05_Assignment3_DataVisualization.ipynb
+- pulse_histogram.png
+- age_vs_pulse.png
+
+
+
+# Tools Used
 
 - Python
 - Pandas
-- NumPy (for handling missing values)
-- Matplotlib (for data visualization)
+- NumPy
+- Matplotlib
 - Google Colab
 - GitHub
 
 
-## How to Reproduce the Results
+
+# How to Reproduce the Results
 
 1. Open the notebook in Google Colab.
 2. Upload the provided dataset.
 3. Run all notebook cells from top to bottom.
-4. The cleaned dataset will be generated automatically and exported as a CSV file.
+4. Generated plots and cleaned datasets will be automatically created and saved.
 
 
-## Screenshots
 
-Screenshots showing the cleaning process, validation checks, summary statistics, and visualizations are available in the `screenshots` folder.
+# Screenshots and Visualizations
+
+The repository includes screenshots showing:
+
+- Gender cleaning process
+- Pulse cleaning process
+- Summary statistics
+- Validation checks
+- Pulse distribution histogram
+- Age vs Pulse scatter plot
+
+These screenshots are available in the **screenshots** folder.
 
 
-## Author
+
+# GitHub Repository
+
+Repository URL:
+
+https://github.com/VishalB210/Carisurg_Week_0_Portfolio
+
+
+
+# Author
 
 **Vishal Baboolal**
+
+Electrical & Computer Engineering Student  
+University of the West Indies, St. Augustine
 
 CariSurg MedTech Pathways Program 2026
