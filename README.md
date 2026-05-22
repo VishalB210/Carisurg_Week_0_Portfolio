@@ -111,6 +111,11 @@ Results:
 4. The cleaned dataset will be generated automatically and exported as a CSV file.
 
 
+## Screenshots
+
+Screenshots showing the cleaning process, validation checks, summary statistics, and visualizations are available in the `screenshots` folder.
+
+
 ## Author
 
 **Vishal Baboolal**
