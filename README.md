@@ -1,12 +1,23 @@
 # Carisurg_Week_0_Portfolio
 
-## CariSurg Week 0 Portfolio – Data Cleaning, Data Visualization, and Clinical Context Assignments
+## CariSurg Week 0 Portfolio – Data Cleaning, Data Visualization and Clinical Context Assignments
 
 This repository contains my Week 0 submissions for the CariSurg MedTech Pathways Program.
 
-The assignments focused on developing fundamental data cleaning, data visualization, and clinical understanding skills using Python, Pandas, NumPy, and Matplotlib. The goal was to identify inconsistencies, handle missing values, validate data quality, prepare datasets for analysis, create meaningful visualizations, and understand the clinical significance of healthcare data used in emergency triage systems.
+The assignments focused on developing fundamental data cleaning, data visualization, and clinical interpretation skills using Python, Pandas, NumPy, and Matplotlib. The goal was to identify inconsistencies, handle missing values, validate data quality, prepare datasets for analysis, create meaningful visualizations, and understand the clinical significance of healthcare data.
 
+---
 
+## Contents
+
+1. Assignment 1 – Gender Column Cleaning
+2. Assignment 2 – Pulse Column Cleaning
+3. Assignment 3 – Data Visualization
+4. Assignment 4 – Pulse Rate Clinical Context
+5. Assignment 5 – Fraction of Inspired Oxygen (FiO₂) Clinical Context
+6. Screenshots and Visualizations
+
+---
 
 # Assignment 1 – Gender Column Cleaning
 
@@ -27,7 +38,7 @@ The objective of this assignment was to clean and standardize the Gender column 
 - 01_Assignment1_GenderCleaning.ipynb
 - 02_Gender_Cleaned_Dataset.csv
 
-
+---
 
 # Assignment 2 – Pulse Column Cleaning
 
@@ -88,7 +99,7 @@ After cleaning, the dataset was validated using descriptive statistics and visua
 - 03_Assignment2_PulseCleaning.ipynb
 - 04_Pulse_Cleaned_Dataset.csv
 
-
+---
 
 # Assignment 3 – Data Visualization
 
@@ -96,17 +107,17 @@ After cleaning, the dataset was validated using descriptive statistics and visua
 
 The objective of this assignment was to create meaningful clinical visualizations using the Emergency Triage Dataset.
 
-The Pulse column was selected because heart rate is an important vital sign used in emergency medicine to assess circulation, cardiovascular function, and overall patient stability.
+The Pulse column was selected because heart rate is an important vital sign used in emergency medicine to assess circulation, cardiovascular function, and patient stability.
 
-The Pulse column was previously cleaned and validated during Assignment 2 before being used for visualization and analysis.
+The Pulse column was cleaned and validated during Assignment 2 before being used for visualization and analysis.
 
 ## Visualizations Created
 
 ### 1. Pulse Distribution Histogram
 
-Clinical Question:
+**Clinical Question:**
 
-> How are pulse rates distributed among Emergency Department patients?
+How are pulse rates distributed among Emergency Department patients?
 
 A histogram was used to visualize the distribution of pulse values throughout the dataset.
 
@@ -118,9 +129,9 @@ This threshold helps identify patients whose pulse rates may indicate elevated c
 
 ### 2. Age vs Pulse Scatter Plot
 
-Clinical Question:
+**Clinical Question:**
 
-> Does age affect resting heart rate in Emergency Department patients?
+Does age affect resting heart rate in Emergency Department patients?
 
 A scatter plot was used to explore the relationship between Age and Pulse.
 
@@ -141,42 +152,51 @@ These lines provide clinical context when interpreting heart rate measurements.
 ## Files
 
 - 05_Assignment3_DataVisualization.ipynb
-- pulse_histogram.png
-- age_vs_pulse.png
 
+---
 
-
-# Assignment 4 – Clinical Context
+# Assignment 4 – Pulse Rate Clinical Context
 
 ## Objective
 
-The objective of this assignment was to demonstrate an understanding of Pulse Rate as a vital sign and explain its importance in emergency triage.
+The objective of this assignment was to explain the clinical significance of Pulse Rate and its role in emergency triage.
 
-Pulse rate was selected because it is a key physiological indicator used by healthcare professionals to assess circulation, cardiovascular function, and patient stability.
-
-## Topics Covered
+## Key Topics Covered
 
 - Definition of Pulse Rate
 - Normal Clinical Range
 - Bradycardia and Tachycardia
 - Importance in Emergency Triage
-- Clinical Significance of Abnormal Pulse Values
-- Relationship Between Pulse Rate and Triage Priority
-
-## Key Learning Points
-
-- Pulse rate measures the number of heart beats per minute (bpm).
-- A normal resting pulse rate for most adults ranges between **60 and 100 bpm**.
-- Pulse rates below 60 bpm are referred to as **bradycardia**.
-- Pulse rates above 100 bpm are referred to as **tachycardia**.
-- Abnormal pulse values may indicate serious medical conditions requiring urgent assessment.
-- Pulse rate is routinely used alongside other vital signs to support triage and clinical decision-making.
+- Patient Prioritization
+- Clinical Decision Making
 
 ## Files
 
-- 07_Assignment4_Pulse_Clinical_Context.md
+- 06_Assignment_Clinical_Context.md
 
+---
 
+# Assignment 5 – Fraction of Inspired Oxygen (FiO₂) Clinical Context
+
+## Objective
+
+The objective of this assignment was to explain the clinical significance of Fraction of Inspired Oxygen (FiO₂) and its importance in emergency triage.
+
+## Key Topics Covered
+
+- Definition of FiO₂
+- Normal Clinical Range
+- Oxygen Therapy
+- Respiratory Support
+- Importance in Emergency Triage
+- Patient Prioritization
+- Clinical Decision Making
+
+## Files
+
+- 06_Assignment_Clinical_Context.md
+
+---
 
 # Tools Used
 
@@ -187,36 +207,36 @@ Pulse rate was selected because it is a key physiological indicator used by heal
 - Google Colab
 - GitHub
 
-
+---
 
 # How to Reproduce the Results
 
 1. Open the notebook in Google Colab.
 2. Upload the provided dataset.
 3. Run all notebook cells from top to bottom.
-4. Generated plots, cleaned datasets, and clinical documentation can be reviewed within the repository.
+4. Cleaned datasets and visualizations will be generated automatically.
 
-
+---
 
 # Screenshots and Visualizations
 
-The repository includes screenshots documenting the cleaning, validation, and visualization processes completed during Week 0.
+The repository includes screenshots showing:
 
 ### Assignment 2 – Pulse Cleaning
 
-- Pulse cleaning process
-- Summary statistics
-- Validation checks
+- Pulse Before Cleaning
+- Pulse Cleaning Process
+- Pulse Summary Statistics
+- Final Validation Check
 
 ### Assignment 3 – Data Visualization
 
-- Pulse distribution histogram
-- Age vs Pulse scatter plot
-- Clinical reference lines and visual outputs
+- Pulse Distribution Histogram
+- Age vs Pulse Scatter Plot
 
-These screenshots are available in the **screenshots** folder.
+All screenshots are available in the **screenshots** folder.
 
-
+---
 
 # GitHub Repository
 
@@ -224,7 +244,7 @@ Repository URL:
 
 https://github.com/VishalB210/Carisurg_Week_0_Portfolio
 
-
+---
 
 # Author
 
