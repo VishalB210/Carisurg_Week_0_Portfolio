@@ -1,10 +1,10 @@
 # Carisurg_Week_0_Portfolio
 
-## CariSurg Week 0 Portfolio – Data Cleaning and Data Visualization Assignments
+## CariSurg Week 0 Portfolio – Data Cleaning, Data Visualization, and Clinical Context Assignments
 
 This repository contains my Week 0 submissions for the CariSurg MedTech Pathways Program.
 
-The assignments focused on developing fundamental data cleaning and data visualization skills using Python, Pandas, NumPy, and Matplotlib. The goal was to identify inconsistencies, handle missing values, validate data quality, prepare datasets for analysis, and create meaningful visualizations that provide clinical insights from healthcare data.
+The assignments focused on developing fundamental data cleaning, data visualization, and clinical understanding skills using Python, Pandas, NumPy, and Matplotlib. The goal was to identify inconsistencies, handle missing values, validate data quality, prepare datasets for analysis, create meaningful visualizations, and understand the clinical significance of healthcare data used in emergency triage systems.
 
 
 
@@ -50,6 +50,7 @@ The Pulse column was converted to numeric format using Pandas. Invalid or non-nu
 Missing values were identified using data validation checks.
 
 **Result:**
+
 - Missing values after numeric conversion: 44
 
 ### 4. Out-of-Range Detection
@@ -59,6 +60,7 @@ A valid physiological pulse range of 40–170 beats per minute (bpm) was establi
 Values outside this range were considered unrealistic and replaced with NaN.
 
 **Result:**
+
 - Out-of-range pulse values detected: 43
 
 ### 5. Median Imputation
@@ -68,6 +70,7 @@ Missing values were replaced using the median pulse value.
 The median was selected because it is less sensitive to extreme values and outliers than the mean.
 
 **Result:**
+
 - Median pulse value used: 90 bpm
 
 ### 6. Validation
@@ -75,6 +78,7 @@ The median was selected because it is less sensitive to extreme values and outli
 After cleaning, the dataset was validated using descriptive statistics and visual inspection.
 
 **Results:**
+
 - Missing values remaining: 0
 - Minimum pulse value: 40 bpm
 - Maximum pulse value: 170 bpm
@@ -142,6 +146,38 @@ These lines provide clinical context when interpreting heart rate measurements.
 
 
 
+# Assignment 4 – Clinical Context
+
+## Objective
+
+The objective of this assignment was to demonstrate an understanding of Pulse Rate as a vital sign and explain its importance in emergency triage.
+
+Pulse rate was selected because it is a key physiological indicator used by healthcare professionals to assess circulation, cardiovascular function, and patient stability.
+
+## Topics Covered
+
+- Definition of Pulse Rate
+- Normal Clinical Range
+- Bradycardia and Tachycardia
+- Importance in Emergency Triage
+- Clinical Significance of Abnormal Pulse Values
+- Relationship Between Pulse Rate and Triage Priority
+
+## Key Learning Points
+
+- Pulse rate measures the number of heart beats per minute (bpm).
+- A normal resting pulse rate for most adults ranges between **60 and 100 bpm**.
+- Pulse rates below 60 bpm are referred to as **bradycardia**.
+- Pulse rates above 100 bpm are referred to as **tachycardia**.
+- Abnormal pulse values may indicate serious medical conditions requiring urgent assessment.
+- Pulse rate is routinely used alongside other vital signs to support triage and clinical decision-making.
+
+## Files
+
+- 07_Assignment4_Pulse_Clinical_Context.md
+
+
+
 # Tools Used
 
 - Python
@@ -158,20 +194,25 @@ These lines provide clinical context when interpreting heart rate measurements.
 1. Open the notebook in Google Colab.
 2. Upload the provided dataset.
 3. Run all notebook cells from top to bottom.
-4. Generated plots and cleaned datasets will be automatically created and saved.
+4. Generated plots, cleaned datasets, and clinical documentation can be reviewed within the repository.
 
 
 
 # Screenshots and Visualizations
 
-The repository includes screenshots showing:
+The repository includes screenshots documenting the cleaning, validation, and visualization processes completed during Week 0.
 
-- Gender cleaning process
+### Assignment 2 – Pulse Cleaning
+
 - Pulse cleaning process
 - Summary statistics
 - Validation checks
+
+### Assignment 3 – Data Visualization
+
 - Pulse distribution histogram
 - Age vs Pulse scatter plot
+- Clinical reference lines and visual outputs
 
 These screenshots are available in the **screenshots** folder.
 
