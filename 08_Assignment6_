@@ -1,0 +1,103 @@
+# Final Week 0 Deliverable – Pseudocode for a Digital Emergency Triage System
+
+## Name
+
+Vishal Baboolal
+
+## Objective
+
+The objective of this pseudocode is to describe how a digital triage system can use patient information to place patients into different risk categories. The system looks at important emergency department measurements such as vital signs, Glasgow Coma Scale (GCS), oxygen requirements, and warning symptoms to help identify patients who may need urgent care.
+
+The purpose of this system is not to replace nurses or doctors. Instead, it is designed to support healthcare workers by quickly highlighting abnormal findings and helping them make faster, safer triage decisions.
+
+---
+
+## Pseudocode
+
+```text
+START
+
+Collect patient information:
+- Age
+- Gender
+- Glasgow Coma Scale (GCS)
+- Systolic Blood Pressure (SBP)
+- Diastolic Blood Pressure (DBP)
+- Mean Arterial Pressure (MAP)
+- Pulse Rate
+- Temperature
+- Respiratory Rate
+- Fraction of Inspired Oxygen (FiO₂)
+- Oxygen Saturation (SpO₂), if available
+- Main symptoms or complaint
+
+Check for missing or invalid values.
+
+IF any important value is missing:
+    Flag patient record for nurse review
+    Continue using available data
+    Mark confidence level as reduced
+
+Set risk_score = 0
+
+Check consciousness level:
+IF GCS ≤ 8:
+    Add 4 points
+ELSE IF GCS is between 9 and 14:
+    Add 2 points
+
+Check blood pressure:
+IF SBP < 90:
+    Add 4 points
+ELSE IF SBP is very high:
+    Add 2 points
+
+Check pulse rate:
+IF Pulse < 60:
+    Add 2 points
+ELSE IF Pulse > 100:
+    Add 2 points
+ELSE IF Pulse is extremely high or extremely low:
+    Add 4 points
+
+Check respiratory rate:
+IF Respiratory Rate is very low or very high:
+    Add 3 points
+
+Check temperature:
+IF Temperature is very high:
+    Add 2 points
+ELSE IF Temperature is very low:
+    Add 3 points
+
+Check oxygen support:
+IF FiO₂ > 21%:
+    Add 2 points
+
+IF FiO₂ is very high:
+    Add 4 points
+
+Check critical warning signs:
+IF patient has chest pain, severe shortness of breath, major bleeding,
+signs of stroke, unconsciousness, or severe trauma:
+    Add 5 points
+
+Categorize patient:
+
+IF risk_score ≥ 8:
+    risk_level = "High Risk / Immediate Attention"
+
+ELSE IF risk_score is between 4 and 7:
+    risk_level = "Moderate Risk / Urgent Review"
+
+ELSE:
+    risk_level = "Low Risk / Routine Assessment"
+
+Display output:
+- Risk Level
+- Abnormal Findings
+- Suggested Urgency
+- Confidence Level
+- Recommendation for Clinical Review
+
+END
