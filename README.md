@@ -15,8 +15,9 @@ The assignments focused on developing fundamental data cleaning, data visualizat
 3. Assignment 3 – Data Visualization
 4. Assignment 4 – Pulse Rate Clinical Context
 5. Assignment 5 – Fraction of Inspired Oxygen (FiO₂) Clinical Context
-6. Assignment 6 – Digital Emergency Triage System
-7. Screenshots and Visualizations
+6. Assignment 5 (Updated) – Oxygen Saturation (SpO₂) Clinical Context
+7. Assignment 6 – Digital Emergency Triage System
+8. Screenshots and Visualizations
 
 ---
 
@@ -199,6 +200,29 @@ The objective of this assignment was to explain the clinical significance of Fra
 
 ---
 
+# Assignment 5 (Updated) – Oxygen Saturation (SpO₂) Clinical Context
+
+## Objective
+
+Following clarification that the selected metric should not be included in the original dataset, an updated clinical context assignment was completed using Oxygen Saturation (SpO₂).
+
+## Key Topics Covered
+
+- Definition of SpO₂
+- Normal Clinical Range
+- Respiratory Assessment
+- Importance in Emergency Triage
+- Patient Prioritization
+- Clinical Decision Making
+- Respiratory Failure Indicators
+- Oxygen Monitoring
+
+## Files
+
+- 08_Assignment5_Updated_SpO2_Clinical_Context.md
+
+---
+
 # Assignment 6 – Digital Emergency Triage System
 
 ## Objective
@@ -219,7 +243,7 @@ The objective of this assignment was to design and justify a digital emergency t
 
 ## Files
 
-- 08_Assignment6_Digital_Triage_System.md
+- 09_Assignment6_Digital_Triage_System.md
 
 ---
 
@@ -267,12 +291,19 @@ The repository includes screenshots showing:
 
 - Clinical explanation and emergency triage relevance
 
+### Assignment 5 (Updated) – SpO₂ Clinical Context
+
+- Updated clinical context assignment
+- Oxygen Saturation (SpO₂) explanation
+- Emergency triage relevance
+
 ### Assignment 6 – Digital Emergency Triage System
 
 - Digital Emergency Triage System design
 - Risk scoring workflow
 - Threshold justification
 - Algorithm design rationale
+- Final PDF submission document
 
 All screenshots are available in the **screenshots** folder.
 
