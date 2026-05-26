@@ -283,28 +283,6 @@ The repository includes screenshots showing:
 - Pulse Distribution Histogram
 - Age vs Pulse Scatter Plot
 
-### Assignment 4 – Pulse Clinical Context
-
-- Clinical explanation and emergency triage relevance
-
-### Assignment 5 – FiO₂ Clinical Context
-
-- Clinical explanation and emergency triage relevance
-
-### Assignment 5 (Updated) – SpO₂ Clinical Context
-
-- Updated clinical context assignment
-- Oxygen Saturation (SpO₂) explanation
-- Emergency triage relevance
-
-### Assignment 6 – Digital Emergency Triage System
-
-- Digital Emergency Triage System design
-- Risk scoring workflow
-- Threshold justification
-- Algorithm design rationale
-- Final PDF submission document
-
 All screenshots are available in the **screenshots** folder.
 
 ---
