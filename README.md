@@ -2,9 +2,43 @@
 
 ## CariSurg Week 0 Portfolio – Data Cleaning, Data Visualization, Clinical Context and Digital Triage System Design
 
-This repository contains my Week 0 submissions for the CariSurg MedTech Pathways Program.
+This repository contains my Week 0 submissions for the CariSurg MedTech Pathways Programme.
 
 The assignments focused on developing fundamental data cleaning, data visualization, clinical interpretation, and healthcare AI system design skills using Python, Pandas, NumPy, and Matplotlib. The goal was to identify inconsistencies, handle missing values, validate data quality, prepare datasets for analysis, create meaningful visualizations, understand the clinical significance of healthcare data, and design a digital triage workflow capable of supporting emergency department decision-making.
+
+---
+
+## Repository Structure
+
+```text
+Carisurg_Week_0_Portfolio/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+│
+├── data/
+│   ├── README.md
+│   ├── Gender_Cleaned_Dataset.csv
+│   └── Pulse_Cleaned_Dataset.csv
+│
+├── docs/
+│   ├── README.md
+│   ├── Assignment4_Pulse_Clinical_Context.md
+│   ├── Assignment5_FiO2_Clinical_Context.md
+│   ├── Assignment5_Updated_SpO2_Clinical_Context.md
+│   ├── Assignment6_Digital_Triage_System.md
+│   └── Week 1 Final Submission Vishal Baboolal.pdf
+│
+├── notebooks/
+│   ├── README.md
+│   ├── Assignment1_GenderCleaning.ipynb
+│   ├── Assignment2_PulseCleaning.ipynb
+│   └── Assignment3_Data_Visualization.ipynb
+│
+└── screenshots/
+```
 
 ---
 
@@ -17,7 +51,8 @@ The assignments focused on developing fundamental data cleaning, data visualizat
 5. Assignment 5 – Fraction of Inspired Oxygen (FiO₂) Clinical Context
 6. Assignment 5 (Updated) – Oxygen Saturation (SpO₂) Clinical Context
 7. Assignment 6 – Digital Emergency Triage System
-8. Screenshots and Visualizations
+8. Week 1 Preliminary Proposal
+9. Screenshots and Visualizations
 
 ---
 
@@ -29,16 +64,16 @@ The objective of this assignment was to clean and standardize the Gender column 
 
 ## Tasks Completed
 
-- Loaded the dataset into Google Colab
-- Inspected the Gender column
-- Identified inconsistent gender values
-- Standardized gender entries into a consistent format
-- Exported the cleaned dataset
+* Loaded the dataset into Google Colab
+* Inspected the Gender column
+* Identified inconsistent gender values
+* Standardized gender entries into a consistent format
+* Exported the cleaned dataset
 
 ## Files
 
-- 01_Assignment1_GenderCleaning.ipynb
-- 02_Gender_Cleaned_Dataset.csv
+* `notebooks/Assignment1_GenderCleaning.ipynb`
+* `data/Gender_Cleaned_Dataset.csv`
 
 ---
 
@@ -64,7 +99,7 @@ Missing values were identified using data validation checks.
 
 **Results:**
 
-- Missing values after numeric conversion: 44
+* Missing values after numeric conversion: 44
 
 ### 4. Out-of-Range Detection
 
@@ -74,7 +109,7 @@ Values outside this range were considered unrealistic and replaced with NaN.
 
 **Results:**
 
-- Out-of-range pulse values detected: 43
+* Out-of-range pulse values detected: 43
 
 ### 5. Median Imputation
 
@@ -84,7 +119,7 @@ The median was selected because it is less sensitive to extreme values and outli
 
 **Results:**
 
-- Median pulse value used: 90 bpm
+* Median pulse value used: 90 bpm
 
 ### 6. Validation
 
@@ -92,14 +127,14 @@ After cleaning, the dataset was validated using descriptive statistics and visua
 
 **Results:**
 
-- Missing values remaining: 0
-- Minimum pulse value: 40 bpm
-- Maximum pulse value: 170 bpm
+* Missing values remaining: 0
+* Minimum pulse value: 40 bpm
+* Maximum pulse value: 170 bpm
 
 ## Files
 
-- 03_Assignment2_PulseCleaning.ipynb
-- 04_Pulse_Cleaned_Dataset.csv
+* `notebooks/Assignment2_PulseCleaning.ipynb`
+* `data/Pulse_Cleaned_Dataset.csv`
 
 ---
 
@@ -125,7 +160,7 @@ A histogram was used to visualize the distribution of pulse values throughout th
 
 A clinical reference line was added at:
 
-- 100 bpm (Tachycardia Threshold)
+* 100 bpm (Tachycardia Threshold)
 
 This threshold helps identify patients whose pulse rates may indicate elevated cardiovascular stress or other clinical concerns.
 
@@ -139,21 +174,21 @@ A scatter plot was used to explore the relationship between Age and Pulse.
 
 Clinical reference lines were added at:
 
-- 60 bpm (Lower Normal Pulse)
-- 100 bpm (Upper Normal Pulse)
+* 60 bpm (Lower Normal Pulse)
+* 100 bpm (Upper Normal Pulse)
 
 These lines provide clinical context when interpreting heart rate measurements.
 
 ## Results
 
-- Most pulse values were concentrated between approximately 80 and 100 bpm.
-- Some patients exhibited pulse values above the tachycardia threshold.
-- No strong visible relationship between age and pulse was observed.
-- The visualizations demonstrated how cleaned healthcare data can be used to generate meaningful clinical insights.
+* Most pulse values were concentrated between approximately 80 and 100 bpm.
+* Some patients exhibited pulse values above the tachycardia threshold.
+* No strong visible relationship between age and pulse was observed.
+* The visualizations demonstrated how cleaned healthcare data can be used to generate meaningful clinical insights.
 
 ## Files
 
-- 05_Assignment3_DataVisualization.ipynb
+* `notebooks/Assignment3_Data_Visualization.ipynb`
 
 ---
 
@@ -165,16 +200,16 @@ The objective of this assignment was to explain the clinical significance of Pul
 
 ## Key Topics Covered
 
-- Definition of Pulse Rate
-- Normal Clinical Range
-- Bradycardia and Tachycardia
-- Importance in Emergency Triage
-- Patient Prioritization
-- Clinical Decision Making
+* Definition of Pulse Rate
+* Normal Clinical Range
+* Bradycardia and Tachycardia
+* Importance in Emergency Triage
+* Patient Prioritization
+* Clinical Decision Making
 
 ## Files
 
-- 06_Assignment4_Pulse_Clinical_Context.md
+* `docs/Assignment4_Pulse_Clinical_Context.md`
 
 ---
 
@@ -186,17 +221,17 @@ The objective of this assignment was to explain the clinical significance of Fra
 
 ## Key Topics Covered
 
-- Definition of FiO₂
-- Normal Clinical Range
-- Oxygen Therapy
-- Respiratory Support
-- Importance in Emergency Triage
-- Patient Prioritization
-- Clinical Decision Making
+* Definition of FiO₂
+* Normal Clinical Range
+* Oxygen Therapy
+* Respiratory Support
+* Importance in Emergency Triage
+* Patient Prioritization
+* Clinical Decision Making
 
 ## Files
 
-- 07_Assignment5_FiO2_Clinical_Context.md
+* `docs/Assignment5_FiO2_Clinical_Context.md`
 
 ---
 
@@ -208,18 +243,18 @@ Following clarification that the selected metric should not be included in the o
 
 ## Key Topics Covered
 
-- Definition of SpO₂
-- Normal Clinical Range
-- Respiratory Assessment
-- Importance in Emergency Triage
-- Patient Prioritization
-- Clinical Decision Making
-- Respiratory Failure Indicators
-- Oxygen Monitoring
+* Definition of SpO₂
+* Normal Clinical Range
+* Respiratory Assessment
+* Importance in Emergency Triage
+* Patient Prioritization
+* Clinical Decision Making
+* Respiratory Failure Indicators
+* Oxygen Monitoring
 
 ## Files
 
-- 08_Assignment5_Updated_SpO2_Clinical_Context.md
+* `docs/Assignment5_Updated_SpO2_Clinical_Context.md`
 
 ---
 
@@ -231,37 +266,47 @@ The objective of this assignment was to design and justify a digital emergency t
 
 ## Key Topics Covered
 
-- Patient Data Collection
-- Missing Data Handling
-- Risk Scoring
-- Vital Sign Assessment
-- Clinical Warning Signs
-- Threshold Justification
-- Algorithm Design Rationale
-- Human-AI Collaboration
-- Clinical Decision Support
+* Patient Data Collection
+* Missing Data Handling
+* Risk Scoring
+* Vital Sign Assessment
+* Clinical Warning Signs
+* Threshold Justification
+* Algorithm Design Rationale
+* Human-AI Collaboration
+* Clinical Decision Support
 
 ## Files
 
-- 09_Assignment6_Digital_Triage_System.md
+* `docs/Assignment6_Digital_Triage_System.md`
+
+---
+
+# Week 1 Preliminary Proposal
+
+The Week 1 preliminary proposal focused on AI-assisted emergency department triage decision support in a resource-constrained setting.
+
+## Files
+
+* `docs/Week 1 Final Submission Vishal Baboolal.pdf`
 
 ---
 
 # Tools Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Google Colab
-- GitHub
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Google Colab
+* GitHub
 
 ---
 
 # How to Reproduce the Results
 
-1. Open the notebook in Google Colab.
-2. Upload the provided dataset.
+1. Open the relevant notebook from the `notebooks/` folder in Google Colab.
+2. Upload the required dataset when prompted.
 3. Run all notebook cells from top to bottom.
 4. Cleaned datasets and visualizations will be generated automatically.
 
@@ -273,17 +318,17 @@ The repository includes screenshots showing:
 
 ### Assignment 2 – Pulse Cleaning
 
-- Pulse Before Cleaning
-- Pulse Cleaning Process
-- Pulse Summary Statistics
-- Final Validation Check
+* Pulse Before Cleaning
+* Pulse Cleaning Process
+* Pulse Summary Statistics
+* Final Validation Check
 
 ### Assignment 3 – Data Visualization
 
-- Pulse Distribution Histogram
-- Age vs Pulse Scatter Plot
+* Pulse Distribution Histogram
+* Age vs Pulse Scatter Plot
 
-All screenshots are available in the **screenshots** folder.
+All screenshots are available in the `screenshots/` folder.
 
 ---
 
@@ -299,7 +344,7 @@ https://github.com/VishalB210/Carisurg_Week_0_Portfolio
 
 **Vishal Baboolal**
 
-Electrical & Computer Engineering Student  
+Electrical & Computer Engineering Student
 University of the West Indies, St. Augustine
 
-CariSurg MedTech Pathways Program 2026
+CariSurg MedTech Pathways Programme 2026
