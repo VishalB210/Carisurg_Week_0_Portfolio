@@ -1,17 +1,29 @@
-# CariSurg_MedTech_Pathways_Portfolio
+# CariSurg MedTech Pathways Portfolio
 
-## CariSurg MedTech Pathways Portfolio – Data Cleaning, Data Visualization, Clinical Context, Digital Triage Design, and Research Proposal Development
+This repository contains my portfolio work for the CariSurg MedTech Pathways Programme 2026. It includes healthcare data cleaning, clinical data visualization, clinical context writing, digital triage workflow design, and research proposal development focused on AI-assisted emergency department triage.
 
-This repository contains my portfolio submissions for the CariSurg MedTech Pathways Programme 2026.
+---
 
-The work in this repository focuses on developing foundational skills in healthcare data cleaning, data visualization, clinical interpretation, healthcare AI system design, research proposal writing, reference management, and professional documentation. The assignments use tools such as Python, Pandas, NumPy, Matplotlib, Google Colab, GitHub, and Zotero to support healthcare data analysis and emergency department triage decision-making.
+## Who This Project Is For
+
+This repository is intended for CariSurg tutors, reviewers, and anyone interested in beginner-friendly healthcare AI portfolio work. It is designed to show how emergency triage data can be cleaned, explored, documented, and connected to clinical decision-making.
+
+---
+
+## Project Overview
+
+The project focuses on emergency department triage data and healthcare AI concepts.
+
+The Week 0 work includes cleaning gender and pulse data, creating clinical visualizations, explaining the clinical importance of vital signs, and designing a digital triage workflow.
+
+The Week 1 and Week 2 submissions develop a research proposal on AI-assisted emergency department triage in resource-constrained settings.
 
 ---
 
 ## Repository Structure
 
 ```text
-CariSurg_MedTech_Pathways_Portfolio/
+Carisurg_MedTech_Pathways_Portfolio/
 │
 ├── README.md
 ├── LICENSE
@@ -19,9 +31,7 @@ CariSurg_MedTech_Pathways_Portfolio/
 ├── requirements.txt
 │
 ├── data/
-│   ├── README.md
-│   ├── Gender_Cleaned_Dataset.csv
-│   └── Pulse_Cleaned_Dataset.csv
+│   └── README.md
 │
 ├── docs/
 │   ├── README.md
@@ -43,288 +53,102 @@ CariSurg_MedTech_Pathways_Portfolio/
 
 ---
 
-## Contents
+## Main Contents
 
-1. Assignment 1 – Gender Column Cleaning
-2. Assignment 2 – Pulse Column Cleaning
-3. Assignment 3 – Data Visualization
-4. Assignment 4 – Pulse Rate Clinical Context
-5. Assignment 5 – Fraction of Inspired Oxygen (FiO₂) Clinical Context
-6. Assignment 5 (Updated) – Oxygen Saturation (SpO₂) Clinical Context
-7. Assignment 6 – Digital Emergency Triage System
-8. Week 1 Final Submission
-9. Week 2 Final Submission
-10. Screenshots and Visualizations
+* `notebooks/` contains the Python notebooks for data cleaning and visualization.
+* `docs/` contains clinical context write-ups, the digital triage system design, and research proposal submissions.
+* `data/` is reserved for datasets and includes instructions on where to place the dataset locally.
+* `screenshots/` contains visual evidence of notebook outputs and assignment work.
 
 ---
 
-# Assignment 1 – Gender Column Cleaning
+## Installation
 
-## Objective
+To run the notebooks locally, clone the repository and install the required Python packages:
 
-The objective of this assignment was to clean and standardize the Gender column in the Emergency Triage Dataset.
+```bash
+git clone https://github.com/VishalB210/Carisurg_MedTech_Pathways_Portfolio.git
+cd Carisurg_MedTech_Pathways_Portfolio
+pip install -r requirements.txt
+```
 
-## Tasks Completed
-
-* Loaded the dataset into Google Colab
-* Inspected the Gender column
-* Identified inconsistent gender values
-* Standardized gender entries into a consistent format
-* Exported the cleaned dataset
-
-## Files
-
-* `notebooks/Assignment1_GenderCleaning.ipynb`
-* `data/Gender_Cleaned_Dataset.csv`
+Alternatively, the notebooks can be opened and run in Google Colab.
 
 ---
 
-# Assignment 2 – Pulse Column Cleaning
+## How to Run the Notebooks
 
-## Objective
+1. Open a notebook from the `notebooks/` folder.
+2. Upload the required emergency triage dataset when prompted.
+3. Run the notebook cells from top to bottom.
+4. Review the cleaned outputs, summary statistics, and visualizations.
 
-The objective of this assignment was to clean the Pulse column by identifying missing values, detecting unrealistic pulse readings, and preparing the data for further analysis.
+Example notebooks:
 
-## Cleaning Process
-
-### 1. Initial Inspection
-
-The Pulse column was inspected using frequency counts to understand the distribution of values and identify unusual entries.
-
-### 2. Numeric Conversion
-
-The Pulse column was converted to numeric format using Pandas. Invalid or non-numeric values were converted to missing values (NaN).
-
-### 3. Missing Value Detection
-
-Missing values were identified using data validation checks.
-
-**Results:**
-
-* Missing values after numeric conversion: 44
-
-### 4. Out-of-Range Detection
-
-A valid physiological pulse range of 40–170 beats per minute (bpm) was established.
-
-Values outside this range were considered unrealistic and replaced with NaN.
-
-**Results:**
-
-* Out-of-range pulse values detected: 43
-
-### 5. Median Imputation
-
-Missing values were replaced using the median pulse value.
-
-The median was selected because it is less sensitive to extreme values and outliers than the mean.
-
-**Results:**
-
-* Median pulse value used: 90 bpm
-
-### 6. Validation
-
-After cleaning, the dataset was validated using descriptive statistics and visual inspection.
-
-**Results:**
-
-* Missing values remaining: 0
-* Minimum pulse value: 40 bpm
-* Maximum pulse value: 170 bpm
-
-## Files
-
-* `notebooks/Assignment2_PulseCleaning.ipynb`
-* `data/Pulse_Cleaned_Dataset.csv`
+```text
+notebooks/Assignment1_GenderCleaning.ipynb
+notebooks/Assignment2_PulseCleaning.ipynb
+notebooks/Assignment3_Data_Visualization.ipynb
+```
 
 ---
 
-# Assignment 3 – Data Visualization
+## Data Instructions
 
-## Objective
+The `data/` folder is intentionally kept empty except for its README file.
 
-The objective of this assignment was to create meaningful clinical visualizations using the Emergency Triage Dataset.
+Dataset files are not included in this repository. To run the notebooks, place the required dataset file in the `data/` folder locally, or upload the dataset directly when using Google Colab.
 
-The Pulse column was selected because heart rate is an important vital sign used in emergency medicine to assess circulation, cardiovascular function, and patient stability.
+Expected local structure:
 
-The Pulse column was cleaned and validated during Assignment 2 before being used for visualization and analysis.
+```text
+data/
+└── EmergencyTriageDataset_Reduced_Dirty.csv
+```
 
-## Visualizations Created
-
-### 1. Pulse Distribution Histogram
-
-**Clinical Question:**
-
-How are pulse rates distributed among Emergency Department patients?
-
-A histogram was used to visualize the distribution of pulse values throughout the dataset.
-
-A clinical reference line was added at:
-
-* 100 bpm (Tachycardia Threshold)
-
-This threshold helps identify patients whose pulse rates may indicate elevated cardiovascular stress or other clinical concerns.
-
-### 2. Age vs Pulse Scatter Plot
-
-**Clinical Question:**
-
-Does age affect resting heart rate in Emergency Department patients?
-
-A scatter plot was used to explore the relationship between Age and Pulse.
-
-Clinical reference lines were added at:
-
-* 60 bpm (Lower Normal Pulse)
-* 100 bpm (Upper Normal Pulse)
-
-These lines provide clinical context when interpreting heart rate measurements.
-
-## Results
-
-* Most pulse values were concentrated between approximately 80 and 100 bpm.
-* Some patients exhibited pulse values above the tachycardia threshold.
-* No strong visible relationship between age and pulse was observed.
-* The visualizations demonstrated how cleaned healthcare data can be used to generate meaningful clinical insights.
-
-## Files
-
-* `notebooks/Assignment3_Data_Visualization.ipynb`
+Cleaned datasets generated during notebook execution should be saved locally or exported as needed, but they are not required to be stored in this repository.
 
 ---
 
-# Assignment 4 – Pulse Rate Clinical Context
+## Week 0 Work
 
-## Objective
+Week 0 focused on:
 
-The objective of this assignment was to explain the clinical significance of Pulse Rate and its role in emergency triage.
-
-## Key Topics Covered
-
-* Definition of Pulse Rate
-* Normal Clinical Range
-* Bradycardia and Tachycardia
-* Importance in Emergency Triage
-* Patient Prioritization
-* Clinical Decision Making
-
-## Files
-
-* `docs/Assignment4_Pulse_Clinical_Context.md`
+* Cleaning inconsistent gender values
+* Cleaning pulse values and handling missing or unrealistic readings
+* Creating pulse distribution and age-versus-pulse visualizations
+* Explaining the clinical importance of pulse rate, FiO₂, and SpO₂
+* Designing a digital emergency triage workflow
 
 ---
 
-# Assignment 5 – Fraction of Inspired Oxygen (FiO₂) Clinical Context
-
-## Objective
-
-The objective of this assignment was to explain the clinical significance of Fraction of Inspired Oxygen (FiO₂) and its importance in emergency triage.
-
-## Key Topics Covered
-
-* Definition of FiO₂
-* Normal Clinical Range
-* Oxygen Therapy
-* Respiratory Support
-* Importance in Emergency Triage
-* Patient Prioritization
-* Clinical Decision Making
-
-## Files
-
-* `docs/Assignment5_FiO2_Clinical_Context.md`
-
----
-
-# Assignment 5 (Updated) – Oxygen Saturation (SpO₂) Clinical Context
-
-## Objective
-
-Following clarification that the selected metric should not be included in the original dataset, an updated clinical context assignment was completed using Oxygen Saturation (SpO₂).
-
-## Key Topics Covered
-
-* Definition of SpO₂
-* Normal Clinical Range
-* Respiratory Assessment
-* Importance in Emergency Triage
-* Patient Prioritization
-* Clinical Decision Making
-* Respiratory Failure Indicators
-* Oxygen Monitoring
-
-## Files
-
-* `docs/Assignment5_Updated_SpO2_Clinical_Context.md`
-
----
-
-# Assignment 6 – Digital Emergency Triage System
-
-## Objective
-
-The objective of this assignment was to design and justify a digital emergency triage algorithm capable of processing patient information and categorizing patients into risk levels.
-
-## Key Topics Covered
-
-* Patient Data Collection
-* Missing Data Handling
-* Risk Scoring
-* Vital Sign Assessment
-* Clinical Warning Signs
-* Threshold Justification
-* Algorithm Design Rationale
-* Human-AI Collaboration
-* Clinical Decision Support
-
-## Files
-
-* `docs/Assignment6_Digital_Triage_System.md`
-
----
-
-# Week 1 Final Submission
+## Week 1 Final Submission
 
 The Week 1 final submission focused on an AI-assisted emergency department triage decision support proposal for a resource-constrained setting.
 
-## Key Topics Covered
+File:
 
-* AI-assisted emergency department triage
-* Risk-flagging support for triage nurses
-* Vital signs and presenting complaint data
-* Research gaps in AI triage implementation
-* Clinical usefulness and workflow integration
-
-## Files
-
-* `docs/Week 1 Final Submission Vishal Baboolal.pdf`
+```text
+docs/Week 1 Final Submission Vishal Baboolal.pdf
+```
 
 ---
 
-# Week 2 Final Submission
+## Week 2 Final Submission
 
-The Week 2 final submission updated the preliminary research proposal using Zotero for citation management and an automatically generated APA 7th edition bibliography.
+The Week 2 final submission updated the research proposal using Zotero-managed citations and an automatically generated APA 7th edition bibliography.
 
-The final submission includes seven peer-reviewed sources related to AI-assisted emergency department triage, external validation, workflow integration, clinical usefulness, and Caribbean emergency department patient flow.
+The final proposal includes seven peer-reviewed sources related to AI-assisted emergency department triage, external validation, workflow integration, clinical usefulness, and Caribbean emergency department patient flow.
 
-## Key Updates
+File:
 
-* Expanded the proposal from five papers to seven peer-reviewed papers
-* Added Zotero-managed in-text citations
-* Generated an automatic APA 7th edition bibliography using Zotero
-* Strengthened the problem statement
-* Improved the gap analysis
-* Clarified the proposed data source and 12-week evaluation plan
-* Added focus on local validation, workflow fit, missing-data handling, and nurse-facing risk flags
-
-## Files
-
-* `docs/Week 2 Final Submission Vishal Baboolal.pdf`
+```text
+docs/Week 2 Final Submission Vishal Baboolal.pdf
+```
 
 ---
 
-# Tools Used
+## Tools Used
 
 * Python
 * Pandas
@@ -337,48 +161,9 @@ The final submission includes seven peer-reviewed sources related to AI-assisted
 
 ---
 
-# How to Reproduce the Results
-
-1. Open the relevant notebook from the `notebooks/` folder in Google Colab.
-2. Upload the required dataset when prompted.
-3. Run all notebook cells from top to bottom.
-4. Cleaned datasets and visualizations will be generated automatically.
-
----
-
-# Screenshots and Visualizations
-
-The repository includes screenshots showing:
-
-### Assignment 2 – Pulse Cleaning
-
-* Pulse Before Cleaning
-* Pulse Cleaning Process
-* Pulse Summary Statistics
-* Final Validation Check
-
-### Assignment 3 – Data Visualization
-
-* Pulse Distribution Histogram
-* Age vs Pulse Scatter Plot
-
-All screenshots are available in the `screenshots/` folder.
-
----
-
-# GitHub Repository
-
-Repository URL:
-
-https://github.com/VishalB210/CariSurg_MedTech_Pathways_Portfolio
-
----
-
-# Author
+## Author
 
 **Vishal Baboolal**
-
 Electrical & Computer Engineering Student
-University of the West Indies, St. Augustine
-
+The University of the West Indies, St. Augustine
 CariSurg MedTech Pathways Programme 2026
