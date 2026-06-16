@@ -30,7 +30,7 @@ Carisurg_Week_0_Portfolio/
 │   ├── Assignment5_Updated_SpO2_Clinical_Context.md
 │   ├── Assignment6_Digital_Triage_System.md
 │   ├── Week 1 Final Submission Vishal Baboolal.pdf
-│   └── Week 2 Updated Proposal Vishal Baboolal.pdf
+│   └── Week 2 Final Submission Vishal Baboolal.pdf
 │
 ├── notebooks/
 │   ├── README.md
@@ -52,8 +52,8 @@ Carisurg_Week_0_Portfolio/
 5. Assignment 5 – Fraction of Inspired Oxygen (FiO₂) Clinical Context
 6. Assignment 5 (Updated) – Oxygen Saturation (SpO₂) Clinical Context
 7. Assignment 6 – Digital Emergency Triage System
-8. Week 1 Preliminary Research Proposal
-9. Week 2 Updated Proposal and Zotero Bibliography
+8. Week 1 Final Submission
+9. Week 2 Final Submission
 10. Screenshots and Visualizations
 
 ---
@@ -284,9 +284,9 @@ The objective of this assignment was to design and justify a digital emergency t
 
 ---
 
-# Week 1 Preliminary Research Proposal
+# Week 1 Final Submission
 
-The Week 1 preliminary proposal focused on AI-assisted emergency department triage decision support in a resource-constrained setting.
+The Week 1 final submission focused on an AI-assisted emergency department triage decision support proposal for a resource-constrained setting.
 
 ## Key Topics Covered
 
@@ -302,11 +302,11 @@ The Week 1 preliminary proposal focused on AI-assisted emergency department tria
 
 ---
 
-# Week 2 Updated Proposal and Zotero Bibliography
+# Week 2 Final Submission
 
-For Week 2, the preliminary research proposal was updated using Zotero for citation management and an automatically generated APA 7th edition bibliography.
+The Week 2 final submission updated the preliminary research proposal using Zotero for citation management and an automatically generated APA 7th edition bibliography.
 
-The updated proposal includes seven peer-reviewed sources related to AI-assisted emergency department triage, external validation, workflow integration, clinical usefulness, and Caribbean emergency department patient flow.
+The final submission includes seven peer-reviewed sources related to AI-assisted emergency department triage, external validation, workflow integration, clinical usefulness, and Caribbean emergency department patient flow.
 
 ## Key Updates
 
@@ -320,7 +320,7 @@ The updated proposal includes seven peer-reviewed sources related to AI-assisted
 
 ## Files
 
-* `docs/Week 2 Updated Proposal Vishal Baboolal.pdf`
+* `docs/Week 2 Final Submission Vishal Baboolal.pdf`
 
 ---
 
